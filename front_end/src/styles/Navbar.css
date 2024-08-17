@@ -1,0 +1,185 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #333; /* Dark background color */
+  color: white;
+}
+
+/* Navbar Top Section */
+.navbar .navbar-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 1rem;
+}
+
+/* Brand Logo */
+.navbar .brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-right: auto;
+}
+
+.navbar .brand-logo {
+  height: 120px;
+  background-color:black;
+  padding: 10px;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+
+/* Search Bar */
+.navbar .search-bar {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 500px;
+  margin-right: 1rem;
+}
+
+.navbar .search-bar input {
+  flex: 1;
+  padding: 0.4rem;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #ddd;
+  border-right: none;
+  box-sizing: border-box;
+  margin-right: -1px;
+  height: 40px;
+}
+
+.navbar .search-bar button {
+  padding: 0.4rem 0.6rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Common Button Style */
+.navbar .btn-cart,
+.navbar .btn-sell-item,
+.navbar .btn-user-profile,
+.navbar .btn-logout {
+  background-color: #2196f3;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+}
+
+/* Specific Button Styles */
+.navbar .btn-logout {
+  background-color: #f44336;
+  padding: 0.3rem 0.6rem;
+  width: 100px;
+}
+
+.navbar .btn-cart {
+  position: relative;
+}
+
+.navbar .btn-sell-item {
+  background-color: #2196f3;
+}
+
+.navbar .btn-user-profile {
+  background-color: #2196f3;
+}
+
+.navbar .btn-cart .badge {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  background-color: #ff5722;
+  color: white;
+  border-radius: 50%;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  min-width: 20px;
+  min-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Filter Menu */
+.navbar .filter-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 1rem;
+}
+
+.navbar .filter-menu button {
+  background-color: #2196f3;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  width: 100px;
+  height: 40px;
+}
+
+.navbar .filter-menu button:hover {
+  background-color: #1976d2;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar .navbar-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar .search-bar {
+    margin: 1rem 0;
+    max-width: 100%;
+  }
+
+  .navbar .search-bar input,
+  .navbar .search-bar button {
+    width: 100%;
+    height: auto;
+  }
+
+  .navbar .btn-sell-item,
+  .navbar .btn-user-profile,
+  .navbar .btn-logout {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+
+  .navbar .filter-menu {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+}

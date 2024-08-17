@@ -1,0 +1,70 @@
+/* UserProfile.css */
+
+.user-profile {
+    /* Add styling for the user profile container */
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Dark text color for the heading */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px; /* Space between form elements */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  textarea {
+    height: 100px; /* Adjust height for textarea */
+  }
+  
+  button {
+    background-color: #007bff; /* Default button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px; /* Adjust padding for button size */
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px; /* Space between buttons */
+    transition: background-color 0.3s, opacity 0.3s; /* Smooth transitions */
+  }
+  
+  button:hover {
+    opacity: 0.8; /* Slightly reduce opacity on hover */
+  }
+  
+  .btn-success {
+    background-color: #28a745; /* Green color for Back to Homepage button */
+  }
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+    text-align: center; /* Center the error message */
+  }
+  

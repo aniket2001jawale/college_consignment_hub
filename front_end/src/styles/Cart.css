@@ -1,0 +1,97 @@
+.cart {
+    padding: 1rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.empty-cart {
+    text-align: center;
+}
+
+.empty-cart h1 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.empty-cart .btn-continue {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.4rem 0.8rem; /* Smaller padding */
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem; /* Slightly smaller font size */
+}
+
+.cart-item {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.cart-item img {
+    max-width: 200px; /* Increased image size */
+    border-radius: 8px;
+}
+
+.cart-details {
+    flex: 1;
+}
+
+.cart-details h5 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.cart-details p {
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem; /* Adjusted gap for normal spacing */
+    margin-top: 0.5rem;
+}
+
+.button-group .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.4rem 0.8rem; /* Smaller padding */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem; /* Smaller font size */
+}
+
+.button-group .btn-remove {
+    background-color: #dc3545;
+}
+
+.button-group .btn-buy {
+    background-color: #28a745;
+}
+
+.checkout {
+    display: flex;
+    gap: 1rem; /* Added gap between buttons */
+    margin-top: 1rem;
+}
+
+.checkout .btn-checkout,
+.checkout .btn-clear {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.4rem 0.8rem; /* Smaller padding */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem; /* Smaller font size */
+}
+
+.checkout .btn-clear {
+    background-color: #dc3545;
+}
